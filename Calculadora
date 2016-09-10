@@ -1,0 +1,89 @@
+<!DOCUMENT html>
+<html>
+<head>
+		<script type="text/javascript">
+			
+		function restar(num1,num2)
+		{
+			var r= Number(num1)-Number(num2);
+			alert(r);
+		}
+		function sumar(num1,num2)
+		{
+			var r= Number(num1)+ Number(num2);
+			alert(r);
+		}
+		function dividir(num1,num2)
+		{
+			var r= Number(num1)/ Number(num2);
+			alert(r);
+		}
+		function multiplicar(num1,num2)
+		{
+			var r= Number(num1)*Number(num2);
+			alert(r);
+		}
+
+		function oprime(valor){
+			var obj=document.getElementById("num1");
+			var val=obj.value;
+			obj.value=val+valor; 
+
+		}
+		function ce(valor){
+			var obj=document.getElementById("num1");
+			var val=obj.value;
+			obj.value=""; 
+
+		}
+
+		function Calcular(valor){
+			var obj=document.getElementById("num1");
+			var val=obj.value;
+			var r=eval(val.toString());
+			obj.value=val+valor; 
+			alert(r);
+
+		}
+
+		</script>
+</head>
+<body>
+	
+		<div>
+			
+
+
+			<input id="num1" type="text"/>
+			<input type="button" id=20" value="C" onclick="ce(this.value);" />
+			<br>
+			<br>
+			
+			<input type="button" id="0" value="0" onclick="oprime(this.value);" />
+			<input type="button" id="1" value="1" onclick="oprime(this.value);" />
+			<input type="button" id="2" value="2" onclick="oprime(this.value);" />
+			<br>
+			<br>
+			<input type="button" id="3" value="3" onclick="oprime(this.value);" />
+			<input type="button" id="4" value="4" onclick="oprime(this.value);" />
+			<input type="button" id="5" value="5" onclick="oprime(this.value);" />
+			<br>
+			<br>
+			<input type="button" id="6" value="6" onclick="oprime(this.value);" />
+			<input type="button" id="7" value="7" onclick="oprime(this.value);" />
+			<input type="button" id="8" value="8" onclick="oprime(this.value);" />
+			<br>
+			<br>
+			<input type="button" id="10" value="=" onclick="Calcular(this.value)"; />
+			<input type="button" id="9" value="9" onclick="oprime(this.value);" />
+			<input type="button" id="11" value="." onclick="oprime(this.value);" />
+			<br>
+			<br>
+			<input type="button" id="12" value="+" onclick="oprime(this.value)"; />
+			<input type="button" id="13" value="-" onclick="oprime(this.value);" />
+			<input type="button" id="14" value="/" onclick="oprime(this.value)"; />
+			<input type="button" id="15" value="x" onclick="oprime(this.value);" />
+
+		</div>
+
+</body>
